@@ -1,0 +1,151 @@
+/* Thiết lập chung */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Nền nhẹ */
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header và Navigation */
+header {
+    background: #007bff; /* Màu xanh chuyên nghiệp */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c9e0ff;
+}
+
+/* Khu vực Hero */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Bài Viết (Post List) */
+.post-list {
+    padding: 40px 0;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.post-card h3 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #888;
+    margin: 5px 0 15px 0;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Về Tôi */
+.about-me {
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+}
+
+.about-me h2 {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+}
